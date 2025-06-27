@@ -14,7 +14,6 @@ const App = () => {
   };
 
   if (!started) {
-    // Only show Landing page initially
     return (
       <Landing
         onGetStarted={() => setStarted(true)}
@@ -22,14 +21,13 @@ const App = () => {
     );
   }
 
-  // After "Get Started", show Sidebar, Dashboard, and UnpredictedData
   return (
     <div style={{ display: 'flex' }}>
       <Sidebar onNavigate={handleNavigate} />
       <div style={{ flex: 1, padding: 24 }}>
         {currentPage === 'Dashboard' && <Dashboard />}
         {currentPage === 'UnpredictedData' && <UnpredictedData />}
-        {/* Add more pages here if needed */}
+        {}
       </div>
     </div>
   );

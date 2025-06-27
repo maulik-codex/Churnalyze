@@ -36,17 +36,4 @@
   transform: scale(1.2);
   cursor: pointer;
 }
-/* import React from 'react'
-import Landing from './Components/Landing.jsx'
-import UnpredictedData from './Components/Unpredicted.jsx'
 
-const App = () => {
-  return (
-    <div>
-      <Landing/>
-      <UnpredictedData/>
-    </div>
-  )
-}
-
-export default App */
