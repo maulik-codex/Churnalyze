@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing.css';
 
-function Landing() {
+function Landing({ onGetStarted }) {
   return (
     <div className="landing-wrapper">
       <div className="landing-container">
@@ -13,7 +13,12 @@ function Landing() {
          We break down the data, show you the "why," and help you win back hearts before customers bounce.
          Less guesswork, more retention — let’s make your growth unstoppable 💥
         </p>
-        <button className="get-started-button">Get Started</button>
+        <button
+          className="get-started-button"
+          onClick={onGetStarted}
+        >
+          Get Started
+        </button>
       </div>
     </div>
   );
